@@ -24,6 +24,18 @@ body {
   padding: 0 15px;
 }
 
+/* утилиты */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+/* убрал зазор в 4px */
+
 /* header */
 .logo {
   color: var(--secondary-text-color);
@@ -54,6 +66,9 @@ body {
 }
 
 .link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -63,19 +78,38 @@ body {
   text-decoration: none;
 }
 
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
-header > .container {
+.header > .container {
+  display: flex;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts a {
+  margin-left: 50px;
 }
 
 /* main */
@@ -105,7 +139,6 @@ ul {
 
 .button {
   border-radius: 4px;
-  /* margin-bottom: 200px; */
   height: 50px;
   width: 200px;
 
@@ -131,6 +164,19 @@ ul {
 .features > .container {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.features .cards {
+  display: flex;
+}
+
+.features .item {
+  width: 270px;
+  height: 101px;
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .heading {
@@ -170,6 +216,14 @@ ul {
   padding-bottom: 94px;
 }
 
+.work .cards {
+  display: flex;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Команда */
 
 .team {
@@ -182,6 +236,10 @@ ul {
 .team > .container {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+.team .cards {
+  display: flex;
 }
 
 .team .heading {
@@ -216,6 +274,10 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* footer */
 
 .footer {
@@ -228,9 +290,14 @@ ul {
   font-style: normal;
 }
 
+.address .link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .address > p {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .footer .logo {
@@ -248,6 +315,11 @@ ul {
 .footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.link.block {
+  display: block;
+  margin-bottom: 9px;
 }
 
 /* portfolio */
@@ -270,6 +342,28 @@ ul {
   letter-spacing: 0.03em;
 
   cursor: pointer;
+}
+
+.portfolio .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .card-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio .card-item:nth-child(-n + 5) {
+  margin-bottom: 30px;
+}
+
+.portfolio .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-nav.current {
