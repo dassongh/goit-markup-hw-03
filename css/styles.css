@@ -66,9 +66,6 @@ img {
 }
 
 .link {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -334,7 +331,6 @@ img {
   border: none;
   height: 38px;
   padding: 6px 22px;
-  margin-bottom: 50px;
 
   background-color: #f5f4fa;
   color: var(--secondary-text-color);
@@ -352,6 +348,7 @@ img {
 .portfolio .buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio .cards {
